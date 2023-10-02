@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my beautiful girl!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f3f3f3; */
+            background-color: #ff6b6b;
+            text-align: center;
+        }
+        #surprise-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        #message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #reveal-button {
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="surprise-box">
+        <h1>Hadiah buat Tyara!</h1>
+        <p id="message">Klik untuk membuka hadiah!</p>
+        <button id="reveal-button">Click Me</button>
+    </div>
+
+    <script>
+        const message = document.getElementById('message');
+        const revealButton = document.getElementById('reveal-button');
+
+        revealButton.addEventListener('click', () => {
+            message.innerHTML = "Aku gatau bagaimana baik maupun buruknya hari mu hari ini. Namun 1 hal yang perlu kamu tau kalau aku akan selalu ada disamping mu dalam suka maupun duka mu. So, jangan pernah ragu buat sertakan aku dalam kisah hidup mu ya!!! Ikan hiu melayang layang, i love you sayang!";
+            revealButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
