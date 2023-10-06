@@ -3,43 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For my beautiful girl!</title>
+    <title>Interactive Surprise</title>
+    <!-- <script>
+        document.getElementById('vid').play();
+    </script> -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            /* background-color: #f3f3f3; */
-            background-color: #ff6b6b;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
         }
-        #surprise-box {
-            background-color: #fff;
+        header {
+            text-align: center;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
+            background-color: #ff6b6b;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px;
+        }
+        #cool-image {
+            display: block;
             margin: 0 auto;
-            margin-top: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
         }
         #message {
-            font-size: 24px;
-            margin-bottom: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        #button-container {
+            text-align: center;
+            margin-top: 20px;
         }
         #reveal-button {
             background-color: #ff6b6b;
-            color: #fff;
+            color: #ffffff;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
             cursor: pointer;
+        }
+        #footer {
+            text-align: center;
+            background-color: #ff6b6b;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div id="surprise-box">
-        <h1>Hadiah buat Tyara!</h1>
-        <p id="message">Klik untuk membuka hadiah!</p>
-        <button id="reveal-button">Click Me</button>
+    <header>
+        
+        <!-- <audio controls autoplay="true">
+            <source src="canthelp.ogg" type="audio/ogg">
+            <source src="canthelp.mp3" type="audio/mpeg">
+        </audio> -->
+        <h1>For My Jangkung Girl</h1>
+    </header>
+    
+    <div id="message">
+        <p>Hey there, my <strong>Ara</strong>,</p>
+        <video width="320" height="240" controls preload="auto" loop="true" autoplay="autoplay" id="vid">
+            <source src="ours.mp4" type="video/mp4">
+        </video>
+        <p>Mungkin mood mu sedang hancur karena ku, tapi tolong coba luangkan waktu buat buka ini ya sayang ku ya walaupun ga keren banget sih hehhe.</p>
+        <!-- <img id="cool-image" src="https://via.placeholder.com/400" alt="Cool Image">
+        <p>Ready for the interactive part? Click the button below to reveal the surprise:</p> -->
+        <div id="button-container">
+            <button id="reveal-button">Click Me</button>
+        </div>
+    </div>
+    <div id="footer">
+        <p>With love, <strong>Your Kunti Bogel</strong></p>
     </div>
 
     <script>
@@ -47,9 +88,10 @@
         const revealButton = document.getElementById('reveal-button');
 
         revealButton.addEventListener('click', () => {
-            message.innerHTML = "Aku gatau bagaimana baik maupun buruknya hari mu hari ini. Namun 1 hal yang perlu kamu tau kalau aku akan selalu ada disamping mu dalam suka maupun duka mu. So, jangan pernah ragu buat sertakan aku dalam kisah hidup mu ya!!! Ikan hiu melayang layang, i love you sayang!";
+            message.innerHTML = "<audio preload='auto' loop='true' autoplay='autoplay'><source src='canthelp.mp3' type='audio/mpeg'></audio><p>Hey sayang ku, jangkung ku yang paling cantik. Terima kasih? Ya terima kasih buat hadir mu dalam hidup ku, terima kasih buat setiap warna yang kau torehkan dalam setiap kanvas hidup ku. Maaf? Ya beribu maaf ingin ku ucapkan atas setiap kekurangan ku dalam hubungan ini, maaf jika aku menjatuhkan air mata di pipi mu. Maaf jika aku terlalu mencintai mu sampai aku takut akan kehilangan mu. Yupss si kunti bogel ini sayang ara banyak banyak, maka dari itu sekali lagi maafkan aku ya cinta ku, jangan lelah untuk jalan bersama ku. Jangan lelah buat ajari aku untuk melukis senyuman indah itu di wajah mu ya! You're the coolest person I know, and I'm so lucky to have you in my life.</p><p>Let's continue making awesome memories together! :)</p>";
             revealButton.style.display = 'none';
         });
+        
     </script>
 </body>
 </html>
